@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "sales": {
+      ".read": true,
+      ".write": true,
+      "$saleId": {
+        ".validate": "newData.hasChildren(['name', 'start', 'end'])"
+      }
+    }
+  }
+}
